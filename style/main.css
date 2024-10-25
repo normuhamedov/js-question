@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 24px;
+    background: linear-gradient(70deg, red, white, grey, red);
+    background-size: 4000% 400%;
+    animation: waveEffect 8s ease-in-out infinite;
+}
+@keyframes waveEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+p {
+    font-size: 15px;
+}
+strong {
+    font-size: 18px;
+}
+.container div{
+    width: 400px; 
+    background-color: darkgrey;
+    padding: auto;
+    height: 400px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 15px;
+}
